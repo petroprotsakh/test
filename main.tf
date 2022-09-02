@@ -1,5 +1,5 @@
-resource "null_resource" "wait" {
-  provisioner "local-exec" {
-    command = "sleep 1"
+resource "null_resource" "trigger" {
+  triggers = {
+    timestamp = timestamp()
   }
 }
