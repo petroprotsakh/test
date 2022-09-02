@@ -1,4 +1,4 @@
-resource "null_resource" "trigger_res" {
+resource "null_resource" "trigger" {
   triggers = {
     timestamp = timestamp()
   }
